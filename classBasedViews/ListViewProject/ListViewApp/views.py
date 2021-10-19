@@ -29,7 +29,7 @@ class MyListView(ListView):#importing the ListView class  and creating the child
             template_name="ListViewApp/index.html"
         else:
             template_name=self.template_name
-        return [template_name] #returning the list of template name
+        return super().get_template_names() #returning the list of template name
 
 
 
