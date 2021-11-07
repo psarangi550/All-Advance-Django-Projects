@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/All_Django_Projects/chainingdjangomiddleWareProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Very_Academy_Adv_Videos/ProcessOptionalFunctionMiddlewareProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Very_Academy_Adv_Videos/fExpressionProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/classBasedViews/DetailViewProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/classBasedViews/FormViewProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/realDjangoProjects/miniblogProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/realDjangoProjects/wfmtcrudProject/wfmtcrudApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/realDjangoProjects/wfmtcrudProject/wfmtcrudApp/wfmtProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/realDjangoProjects/wfmtcrudProject/wfmtcrudApp/wfmtcrudapp" vcs="Git" />
+  </component>
+</project>
