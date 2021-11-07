@@ -120,11 +120,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'localhost'
 
-EMAIL_PORT =465
+EMAIL_PORT =25
 
-EMAIL_USE_SSL=True
+# EMAIL_USE_SSL=True
+
+# EMAIL_USE_TLS=True
 
 EMAIL_HOST_USER="pratik.django@gmail.com"
 
