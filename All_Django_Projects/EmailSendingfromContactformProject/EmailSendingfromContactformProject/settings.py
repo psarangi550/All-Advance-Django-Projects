@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "EmailSendingfromContactformApp",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,12 +130,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 
-EMAIL_HOST="smtp.sendgrid.net"
+EMAIL_HOST="smtp.gmail.com"
 
 EMAIL_PORT=465
 
 EMAIL_USE_SSL=True
 
-EMAIL_HOST_USER
+EMAIL_HOST_USER="django.pratik@gmail.com"
 
-EMAIL_HOST_PASSWORD=""
+EMAIL_HOST_PASSWORD="Qwerty@123"

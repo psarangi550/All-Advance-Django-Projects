@@ -1,7 +1,7 @@
 !<!doctype html>
 <html lang="en">
 <head>
-    <title>Email</title>
+    <title>Email Send Form</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,9 +11,24 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-5">Email Been Sent To {{name}}</h1>
+    <div class="container mt-5" align="center">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h1 class="display-5">Email Send Form</h1>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                             {{form.as_p}}
+                        {% csrf_token %}
+                        <input type="submit" class="btn btn-primary" value="Send Email">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 <!-- Optional JavaScript -->
