@@ -1,0 +1,23 @@
+{% extends "EmbedVideoApp/base.html" %}
+{% load embed_video_tags %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            {% for item in videos %}
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h1 class="display-5">{{item.name}}</h1>
+                        </div>
+                        <div class="card-body">
+                            {% video item.url '420x315' %}
+                        </div>
+                        <div class="card-footer">
+                            {{item.date_added}}
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            {% endfor %}
+        </div>
+    {% endblock content %}
