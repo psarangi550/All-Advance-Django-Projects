@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
     path('bloglist/',views.blog_list_view,name="bloglist"),
+    path('bloglist/<slug:tag_slug>/',views.blog_list_view,name="bloglist_tagslug"),
     path('blogdetail/<int:id>/',views.blog_detail_view ,name="blog_detail"),
     path("share/<int:id>/",views.EmailSendView ,name="send_email"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

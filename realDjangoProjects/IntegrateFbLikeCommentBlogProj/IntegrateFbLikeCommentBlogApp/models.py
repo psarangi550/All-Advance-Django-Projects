@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User #importing th user model here
+from taggit.managers import TaggableManager
 # Create your models here.
 
 class Blog(models.Model):
@@ -8,6 +9,8 @@ class Blog(models.Model):
     blog_img=models.ImageField(upload_to="media", blank=True, null=True)
     title=models.CharField(max_length=200)
     desc=models.TextField()
+    tags=TaggableManager()
+
 
     def __str__(self):
         return self.title

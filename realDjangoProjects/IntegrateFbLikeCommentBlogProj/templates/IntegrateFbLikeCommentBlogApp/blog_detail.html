@@ -9,16 +9,20 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="QojOtxUh"></script>
     </head>
     <body class="bg-dark">
-        <div class="container text-white mt-3">
-           <div class="row">
-               <div class="col-sm-6">
-                   <h1 class="display-5 text-white">{{blog.title}}</h1>
-                   <i> Published on:-{{blog.published_date}}</i>
-               </div>
-               <div class="col-sm-6">
-                   <img src="{{blog.blog_img.url}}" alt="" width="300px" height="200px">
-               </div>
-           </div>
+        <div class="container text-white mt-4">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="display-5 text-white">{{blog.title}}</h1>
+                    {% for tag in blog.tags.all %}
+                        <a href="{% url 'bloglist_tagslug' tag_slug=tag.slug %}" class="btn btn-sm btn-outline-warning text-white">Tags:-{{tag.name}}</a>
+                    {% endfor %}
+                    <br><br>
+                    <p><i> Published on:-{{blog.published_date}}</i></p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="{{blog.blog_img.url}}" alt="" width="300px" height="200px">
+                </div>
+            </div>
         </div>
         <div class="container mt-4" align="center">
             <div class="row">
@@ -28,12 +32,20 @@
             </div>
         </div>
         <hr>
-         <div class="container mt-1 text-white " align="left">
+        <div class="container mt-1 text-white " align="left">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="fb-like" data-href="http://127.0.0.1:8000/blogdetail/{{blog.id}}/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div><br>
                     <div class="fb-share-button" data-href="htthttp://127.0.0.1:8000/blogdetail/{{blog.id}}/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-                    <div><a href="{% url 'send_email' blog.id %}" class="btn btn-primary btn-sm">Share By Email</a></div>
+                    <div><a href="{% url 'send_email' blog.id %}" class="btn btn-primary btn-sm">Share By Email</a></div><br><br>
+                    <div class="mt-1">
+                        {% for tag in similar_post %}
+                            <h6 class="display-5 text-white">Similar Post</h6>
+                            <a href='{% url 'blog_detail' tag.id %}' class="text-white">{{tag}}</a>
+                            {% empty %}
+                            <p>No Similar Post </p>
+                        {% endfor %}
+                    </div>
                 </div>
                 <div class="col-sm-7">
                     <div class="fb-comments text-white bg-light" data-href="http://127.0.0.1:8000/blogdetail/{{blog.id}}/" data-width="" data-numposts="5"></div>
