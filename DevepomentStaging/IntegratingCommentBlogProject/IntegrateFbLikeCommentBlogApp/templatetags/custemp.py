@@ -21,3 +21,10 @@ def latest_post():
     # for blog in Blog.objects.all():
         # max_comment=max(blog.blog_comment)
     return {"blogs":blog_list}
+
+
+@register.simple_tag(name="less_comment")
+def comment_less(count=3):
+    less_counts=Blog.objects.all().annotate(total_counts=Count("blog_comment__id")).order_by('total_counts')[0:count]
+    return less_counts
+
