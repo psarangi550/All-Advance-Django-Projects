@@ -28,6 +28,7 @@ def blog_list_view(request,tag_slug=None):
 #blog_detail view
 def blog_detail_view(request,id):
     blog=get_object_or_404(Blog,id=id)
+    all_url=request.build_absolute_uri(reverse("blog_detail",kwargs={"id":blog.id}))
     blog_tag_id=blog.tags.values_list("id",flat=True)
     all_blogs=Blog.objects.filter(tags__id__in=[blog_tag_id]).exclude(id=blog.id)
     similar_post=all_blogs.annotate(same_tags=Count("tags")).order_by('-same_tags','-published_date')[0:3]
@@ -41,7 +42,7 @@ def blog_detail_view(request,id):
             new_comment.save()
             return HttpResponseRedirect(reverse("blog_detail",kwargs={"id":blog.id}))
     form=CommentForm()
-    context={"blog":blog,"similar_post":similar_post,"form":form,"comments":all_comments}
+    context={"blog":blog,"similar_post":similar_post,"form":form,"comments":all_comments,"all_url":all_url}
     return render(request, "IntegrateFbLikeCommentBlogApp/blog_detail.html",context)
 
 #Email Send Form functionality

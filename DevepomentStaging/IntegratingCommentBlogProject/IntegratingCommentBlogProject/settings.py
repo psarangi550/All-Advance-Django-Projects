@@ -25,7 +25,7 @@ SECRET_KEY = 'a6ygywq$@-=@k#ipg^svkjm=yc8b-zpgl%2=@271(1qk&e&8(9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'IntegrateFbLikeCommentBlogApp.apps.IntegratefblikecommentblogappConfig',
     'crispy_forms',
     'taggit',
+    'django_social_share',
 ]
 
 MIDDLEWARE = [
