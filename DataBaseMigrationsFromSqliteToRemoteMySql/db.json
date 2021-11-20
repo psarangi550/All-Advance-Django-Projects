@@ -1,0 +1,290 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$bH0eGF3k9JmA12Pncwh2rw$yC+Q0ndrUMKOxuMquvcD6GrLpUiXp8VWK1PbHxCaRHo=",
+        "last_login": "2021-11-19T22:51:39.727Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-11-19T22:51:12.969Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2uvjin4uqppakp8pbuc06p785fdawfki",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCohQGX7nsGMjCDVA0kpV0Z765NutDtf-_9lwi4rSVsnZcwk7gILU6_W8T04LoDumO9NZlaXZc5yl2RB-1yasTP6-H-HRTs5VsrzgYQYjaDTpR5NIqBIJ9tIjdqzqAM2qgSKm_BWWuAjHUElNF7GsT7A_ynOFA:1moCjL:IiC0WA5ghb4s8rkbd8OszHWIJzN_fmpwK1lX8MTb8cU",
+        "expire_date": "2021-12-03T22:51:39.765Z"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.category",
+    "pk": 1,
+    "fields": {
+        "name": "Books"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.category",
+    "pk": 2,
+    "fields": {
+        "name": "Youtube"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.category",
+    "pk": 3,
+    "fields": {
+        "name": "Movies"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.category",
+    "pk": 4,
+    "fields": {
+        "name": "Sports"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.category",
+    "pk": 5,
+    "fields": {
+        "name": "News"
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.blog",
+    "pk": 1,
+    "fields": {
+        "tittle": "Learn Django-RestFramework From Tomorrow",
+        "desc": "Learn Django-RestFramework From Tomorrow Continiously",
+        "category": 1,
+        "author": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.blog",
+    "pk": 2,
+    "fields": {
+        "tittle": "Learn Flask Framework From December 25th",
+        "desc": "Learn Flask Framework From December 25th with Its Deployment",
+        "category": 2,
+        "author": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.blog",
+    "pk": 3,
+    "fields": {
+        "tittle": "Learn Git Whenever You Are Free",
+        "desc": "Learn Git Whenever You Are Free From Corey Schafer and Code With Harry",
+        "category": 2,
+        "author": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "MigSqliteToRemoteMysqlApp.blog",
+    "pk": 4,
+    "fields": {
+        "tittle": "Learn Docker From Chris Kalmer",
+        "desc": "Learn Docker From Chris Kalmer",
+        "category": 5,
+        "author": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-11-19T22:55:18.329Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Books",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-11-19T22:55:22.128Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Youtube",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-11-19T22:55:26.552Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Youtube",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-11-19T22:55:30.936Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Movies",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-11-19T22:55:34.896Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "Sports",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-11-19T22:55:42.528Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "News",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-11-19T22:56:04.580Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "blog"
+        ],
+        "object_id": "1",
+        "object_repr": "Learn Django-RestFramework From Tomorrow",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-11-19T22:56:26.918Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "blog"
+        ],
+        "object_id": "2",
+        "object_repr": "Learn Flask Framework From December 25th",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-11-19T22:57:07.318Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "blog"
+        ],
+        "object_id": "3",
+        "object_repr": "Learn Git Whenever You Are Free",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-11-19T22:57:30.580Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "MigSqliteToRemoteMysqlApp",
+            "blog"
+        ],
+        "object_id": "4",
+        "object_repr": "Learn Docker From Chris Kalmer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

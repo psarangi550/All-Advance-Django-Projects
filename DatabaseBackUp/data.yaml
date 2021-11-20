@@ -1,0 +1,14 @@
+-   model: SqliteDbBackupApp.blog
+    pk: 1
+    fields:
+        tittle: Learn Django-RestFramework From Tomorrow
+        desc: Learn Django-RestFramework From Tomorrow and Multiple Devops Deployment
+        category: 1
+        author: 1
+-   model: SqliteDbBackupApp.blog
+    pk: 2
+    fields:
+        tittle: Learn Flask Framework From December 25th
+        desc: Learn Flask Framework From December 25th and various Deployment Fiields
+        category: 2
+        author: 1
